@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        fontFamily: 'Poppins',
         textTheme: const TextTheme(
           displayLarge: TextStyle(
             fontSize: 96,
@@ -111,6 +112,11 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar());
+    return Scaffold(
+      appBar: AppBar(),
+      body: const Center(
+        child: Text("Hello, Template"),
+      ),
+    );
   }
 }
